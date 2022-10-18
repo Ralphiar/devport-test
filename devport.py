@@ -93,14 +93,10 @@ def match():
     if request.method == 'POST':
         team_1 = request.form['team_1']
         team_2 = request.form['team_2']
-        print(team_1)
-        print(team_2)
         temp = difflib.SequenceMatcher(None, team_1, team_2)
-        print(temp.get_matching_blocks())
-        print('Similarity Score: ', temp.ratio())
         ratio = temp.ratio()
         return render_template('match.html', ratio=ratio, team_1=team_1, team_2=team_2)
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000, host='0.0.0.0')
+    app.run(debug=True, port=5000, host='0.0.0.0')
