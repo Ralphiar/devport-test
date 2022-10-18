@@ -1,0 +1,19 @@
+.reg_form{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
+
+.reg_button{
+    text-underline-offset: none;
+    font-style: italic;
+    color: brown;
+}
+
+.match_form{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+}
